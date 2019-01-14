@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import "./style.scss"
+import MongoCrud from "./mongo/Crud";
 
 const Titulo = ({titulo}) => {
     return(
@@ -8,12 +8,8 @@ const Titulo = ({titulo}) => {
     )
 }
 
-const Index = ({nome}) => {
-  return (
-    <div>
-        <Titulo titulo="Aprendendo React"/>
-        <p>{nome}</p>
-    </div>);
+const Index = () => {
+  return (<MongoCrud />);
 };
 
-ReactDOM.render(<Index nome="thiago" />, document.getElementById("index"));
+ReactDOM.render(<Index />, document.getElementById("index"));
