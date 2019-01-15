@@ -6,6 +6,8 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+    devtool: 'inline-source-map',
+
   module: {
     rules: [
       {
